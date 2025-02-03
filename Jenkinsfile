@@ -1,5 +1,8 @@
 pipeline{
 	agent any
+	tools{
+		jdk("jdk23")
+	}
 	stages {
 		stage('Permisson'){
 			steps{
